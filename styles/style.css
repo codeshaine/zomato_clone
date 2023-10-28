@@ -51,7 +51,6 @@ header{
     text-decoration: none;
     margin: 0 20px;
 }
-
 ul li:nth-child(1){
     margin-right: 28vw;
     font-weight:bolder;
@@ -60,7 +59,6 @@ ul li:nth-child(1){
 ul li:nth-child(1) i{
     margin-right: 5px;
 }
-
 .menu-bar{
     display: none;
     z-index: 10;
@@ -70,10 +68,6 @@ ul li:nth-child(1) i{
         -ms-transition: all .50s ease-in-out;
         -o-transition: all .50s ease-in-out;
 }
-/* .menu-bar-display {
-    display: none;
-} */
-
 .menu-title{
     z-index: 10;
     display: none;
@@ -84,17 +78,26 @@ ul li:nth-child(1) i{
     -ms-transition: left .5s;
     -o-transition: left .5s;
 }
-/* .menu-close-display {
-    display: none;
-} */
 .menu-close{
     display: none;
     z-index: 10;
 
 }
+@media screen and (max-width:1050px) {
+    ul li:nth-child(1) {
+        font-size:0.7rem ;
+        margin-right: 20vw;
+    }
+    nav {
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+        .navbar-list li {
+        margin: 0 1.5vw;
+        }
+}
 
-
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
         nav {
             font-size: 1.1rem;
         }
