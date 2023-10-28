@@ -19,6 +19,7 @@ a {
 
 header{
     width: 100%;
+    background-color: transparent;
 }
  nav{
     font-family: 'Poppins', sans-serif;
@@ -61,14 +62,17 @@ ul li:nth-child(1) i{
 }
 
 .menu-bar{
-    z-index: 10;
     display: none;
+    z-index: 10;
     transition: all .50s ease-in-out;
         -webkit-transition: all .50s ease-in-out;
         -moz-transition: all .50s ease-in-out;
         -ms-transition: all .50s ease-in-out;
         -o-transition: all .50s ease-in-out;
 }
+/* .menu-bar-display {
+    display: none;
+} */
 
 .menu-title{
     z-index: 10;
@@ -80,12 +84,14 @@ ul li:nth-child(1) i{
     -ms-transition: left .5s;
     -o-transition: left .5s;
 }
-.menu-close{
-    z-index: 10;
+/* .menu-close-display {
     display: none;
+} */
+.menu-close{
+    display: none;
+    z-index: 10;
+
 }
-
-
 
 
 @media screen and (max-width:800px) {
@@ -99,19 +105,18 @@ ul li:nth-child(1) i{
 .navbar-list li {
     margin-bottom: 35px;
 }
-
 .menu-bar{
-    display: block;
+
     position:absolute;
     top: 1rem;
         left: 2rem;
 }
 .menu-close {
     position: absolute;
-    display: none;
     top: 1.7rem;
     left: 2rem;
 }
+
 .navbar-list{
    display: none;
 }
@@ -140,6 +145,19 @@ ul li:nth-child(1) i{
 .menu-bar{
     display: block;
 
+}
+.menu-bar-display {
+    display: block;
+}
+.menu-close-display {
+    display: none;
+}
+.visible{
+    display: block;
+
+}
+.not-visible{
+    display: none;
 }
 }
 
