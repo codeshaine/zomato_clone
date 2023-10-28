@@ -30,3 +30,4 @@ close_button.classList.add("menu-close-display");
 
 }
 navBar();
+

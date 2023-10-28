@@ -1,28 +1,35 @@
- /* :root{
-    --main-bg-color:;
-    --text-color:;
-    --font-size:;
-} */
+ :root{
+    --head-text-color:#ffff;
+   --font-family-head:'poppins',sans-serif;
+   --nav-text-color:#696969;
+}
 
 *{
     margin: 0;
 }
 
 /*! just for cheking use unversal */
-a {
-   color: black;
+
+/* nav a:hover{
+color:beige
+} */
+
+
+.head{
+   background-image: url("/images/header.avif");
+   background-size: cover;
+   background-position: center ;
+   height: 60vh;
 }
-
-
+/* header{
+    width: 100%;
+    background-color: transparent;
+} */
 
 /* *navbar */
 
-header{
-    width: 100%;
-    background-color: transparent;
-}
  nav{
-    font-family: 'Poppins', sans-serif;
+    font-family:var(--font-family-head);
     font-size: 1.2rem;
     padding: 0 1rem 3rem 1rem;
     background-color:transparent;
@@ -34,6 +41,9 @@ header{
         -moz-transition: all .50s ease-in-out;
         -ms-transition: all .50s ease-in-out;
         -o-transition: all .50s ease-in-out;
+}
+nav a {
+    color: var(--head-text-color);
 }
 .navbar-list{
     width: 100%;
@@ -98,6 +108,9 @@ ul li:nth-child(1) i{
 }
 
 @media screen and (max-width:600px) {
+       nav a{
+        color:var(--nav-text-color);
+       }
         nav {
             font-size: 1.1rem;
         }
@@ -129,7 +142,7 @@ ul li:nth-child(1) i{
             display:block;
             width: 100vw;
             height: 100vh;
-            background-color: paleturquoise;
+            background-color:var(--head-text-color);
             margin: 0;
             transition: all .50s ease-in-out;
             -webkit-transition: all .50s ease-in-out;
@@ -164,6 +177,26 @@ ul li:nth-child(1) i{
 }
 }
 
+/* *head second part */
+.head-second-part{
+    font-family: var(--font-family-head);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+
+}
+
+.head-logo{
+    width:16rem;
+    display: block;
+
+}
+
+.head-second-part h1{
+    margin-top: 30px;
+    color: var(--head-text-color);
+}
 
 
 
