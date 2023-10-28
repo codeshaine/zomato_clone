@@ -10,8 +10,12 @@
 
 /*! just for cheking use unversal */
 a {
-    color: black;
+   color: black;
 }
+
+
+
+/* *navbar */
 
 header{
     width: 100%;
@@ -20,18 +24,16 @@ header{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     padding: 0 1rem 3rem 1rem;
-    background-color:bisque;
+    background-color:transparent;
     display: flex;
     align-items: center;
     justify-content:center  ;
     transition: all .50s ease-in-out;
-    -webkit-transition: all .50s ease-in-out;
-    -moz-transition: all .50s ease-in-out;
-    -ms-transition: all .50s ease-in-out;
-    -o-transition: all .50s ease-in-out;
+        -webkit-transition: all .50s ease-in-out;
+        -moz-transition: all .50s ease-in-out;
+        -ms-transition: all .50s ease-in-out;
+        -o-transition: all .50s ease-in-out;
 }
-
-
 .navbar-list{
     width: 100%;
     padding: 1.5rem 0;
@@ -58,31 +60,90 @@ ul li:nth-child(1) i{
     margin-right: 5px;
 }
 
-#logo{
+.menu-bar{
+    z-index: 10;
+    display: none;
+    transition: all .50s ease-in-out;
+        -webkit-transition: all .50s ease-in-out;
+        -moz-transition: all .50s ease-in-out;
+        -ms-transition: all .50s ease-in-out;
+        -o-transition: all .50s ease-in-out;
+}
+
+.menu-title{
+    z-index: 10;
+    display: none;
+    transition: all .50s ease-in-out; 
+    font-family: 'Lobster', sans-serif;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -ms-transition: left .5s;
+    -o-transition: left .5s;
+}
+.menu-close{
+    z-index: 10;
     display: none;
 }
 
 
 
 
-@media screen and (max-width:500px) {
-        #logo{
-            display: block;
-        }
-
+@media screen and (max-width:800px) {
         nav {
-    
-            white-space: nowrap;
-            font-family: 'Poppins', sans-serif;
-            font-size: 0.7rem;
+            font-size: 1.1rem;
         }
         ul li:nth-child(1) {
-            margin-right: 7vw;
-             /* font-weight: bolder; */
-            font-size: 0.6rem;
+            display: none;
         }
 
-      .navbar-list{
-            display:block;
-        }
+.navbar-list li {
+    margin-bottom: 35px;
 }
+
+.menu-bar{
+    display: block;
+    position:absolute;
+    top: 1rem;
+        left: 2rem;
+}
+.menu-close {
+    position: absolute;
+    display: none;
+    top: 1.7rem;
+    left: 2rem;
+}
+.navbar-list{
+   display: none;
+}
+
+.tnavbar-list{
+            padding: 7rem 1rem;
+            display:block;
+            width: 100vw;
+            height: 100vh;
+            background-color: paleturquoise;
+            margin: 0;
+            transition: all .50s ease-in-out;
+            -webkit-transition: all .50s ease-in-out;
+            -moz-transition: all .50s ease-in-out;
+            -ms-transition: all .50s ease-in-out;
+            -o-transition: all .50s ease-in-out;
+}
+
+.tmenu-title {
+    position:absolute;
+    display: block;
+    top:1rem;
+    right:3rem;
+    font-size: 2.5rem;
+}
+.menu-bar{
+    display: block;
+
+}
+}
+
+
+
+
+
