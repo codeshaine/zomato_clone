@@ -1,0 +1,127 @@
+@media screen and (max-width:1050px) {
+    ul li:nth-child(1) {
+        font-size: 0.7rem;
+        margin-right: 20vw;
+    }
+
+    nav {
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+
+    .navbar-list li {
+        margin: 0 1.5vw;
+    }
+
+    .second-text-box {
+        width: 30vw;
+    }
+
+    .head-input-one {
+        width: 30vw;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    nav a {
+        color: var(--nav-text-color);
+    }
+
+    nav {
+        font-size: 1.1rem;
+    }
+
+    ul li:nth-child(1) {
+        display: none;
+    }
+
+    .navbar-list li {
+        margin-bottom: 35px;
+    }
+
+    .menu-bar {
+
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 1.7rem;
+        left: 2rem;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .tnavbar-list {
+        padding: 7rem 1rem;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--head-text-color);
+        margin: 0;
+        transition: all .50s ease-in-out;
+        -webkit-transition: all .50s ease-in-out;
+        -moz-transition: all .50s ease-in-out;
+        -ms-transition: all .50s ease-in-out;
+        -o-transition: all .50s ease-in-out;
+    }
+
+    .tmenu-title {
+        position: absolute;
+        display: block;
+        top: 1rem;
+        right: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .menu-bar {
+        display: block;
+
+    }
+
+    .menu-bar-display {
+        display: block;
+    }
+
+    .menu-close-display {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+
+    }
+
+    .not-visible {
+        display: none;
+    }
+
+
+
+    /* * for the head second part */
+   
+    .head-second-part {
+        margin-top: 2.5rem;
+    }
+
+    .head-second-part h1 {
+        font-size: 4vh;
+        margin: 50px 0;
+    }
+
+    .second-text-box {
+        width: 30vw;
+    }
+
+    .head-input-one {
+        width: 30vw;
+    }
+
+
+}
