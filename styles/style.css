@@ -1,13 +1,15 @@
  :root {
      --head-text-color: #ffff;
      --font-family-head: 'poppins', sans-serif;
-     ;
+     --font-family-para: 'Open Sans', sans-serif;
      --nav-text-color: #696969;
+     --heading-text-color:#363636;
+     --para-text-color:#4f4f4f;
  }
 
 
 
- * {
+ body{
      margin: 0;
  }
 
@@ -25,17 +27,12 @@ color:beige
      height: 60vh;
  }
 
- /* header{
-    width: 100%;
-    background-color: transparent;
-} */
-
  /* *navbar */
 
  nav {
      font-family: var(--font-family-head);
      font-size: 1.2rem;
-     padding: 0 1rem 3rem 1rem;
+     padding: 0 2vw 3vw 2vw;
      background-color: transparent;
      display: flex;
      align-items: center;
@@ -133,7 +130,12 @@ color:beige
 
 
 
+
  /* *head text boxes */
+
+ .text-boxes input:focus {
+     outline: none;
+ }
 
  .text-boxes {
      display: flex;
@@ -155,6 +157,7 @@ color:beige
      background-color: #ffff;
      padding: 0 0.5rem;
      width: min-content;
+     border-right: 2px solid rgb(79, 79, 79, 0.3);
  }
 
  .svg-location {
@@ -194,15 +197,73 @@ color:beige
      width: 100%;
  }
 
+
+
+
  /* *the three divisions with phtoto */
- .page1{
-    /* display: inline-grid;
-    grid-template-columns: repeat(3,1fr); */
-    /* max-width: 110rem; */
-    /* display: flex */
+ .page1 {
+     max-width:90vw;
+     margin: 0 auto;
+     margin-top: 3vw;
  }
 
- .page1 .order{
-    /* position: absolute; */
-    /* margin: 2rem; */
+
+
+ .page1-first-section {
+    width: 100%;
+     display: flex;
+     /* flex-wrap: wrap-reverse; */
+     justify-content: space-between;
+
+
  }
+
+ .fs-image {
+     height: 60%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 15px 15px 0 0;
+     -webkit-border-radius: 15px 15px 0 0;
+     -moz-border-radius: 15px 15px 0 0;
+     -ms-border-radius: 15px 15px 0 0;
+     -o-border-radius: 15px 15px 0 0;
+}
+
+.fs-content-div{
+    position: absolute;
+    background-color: white ;
+    width: calc(100% - 2rem);
+    bottom:5.2vw;
+    padding: 1rem;
+    border: 1px solid rgb(79, 79, 79,0.1);
+    border-radius:0 0 15px 15px ;
+    -webkit-border-radius:0 0 15px 15px ;
+    -moz-border-radius:0 0 15px 15px ;
+    -ms-border-radius:0 0 15px 15px ;
+    -o-border-radius:0 0 15px 15px ;
+}
+
+.dining , .nightlife , .order{
+    margin: 0;
+    padding: 0;
+width: 32.3333%;
+box-sizing: border-box;
+ position: relative;
+
+
+}
+
+.fs-content-div h2{
+    color :var( --heading-text-color);
+    font-weight: 500;
+    font-family: var(--font-family-head);
+    font-size:1.6vw;
+    margin: 0;
+}
+.fs-content-div p{
+    color:var( --para-text-color);
+    font-family:var(--font-family-para);
+    font-size: 1.2vw;
+    margin: 0;
+}
+
