@@ -7,7 +7,7 @@
     nav {
         font-size: 1rem;
         text-wrap: nowrap;
-        padding: 0 1vw 7rem 1vw;
+        padding: 0 1vw 2vw 1vw;
     }
 
     .navbar-list li {
@@ -22,6 +22,10 @@
         width: 30vw;
     }
 
+    .head {
+        height: 68vh;
+    }
+
 
     /* *the three divisions with phtoto */
 
@@ -30,21 +34,19 @@
     }
 
     .fs-content-div {
-        bottom: 4vw;
-        width: calc(100% - 10px);
-        padding: 5px;
+        bottom: 1px;
+        width: calc(100% - 16px);
+        padding: 8px;
+    }
+
+
+    .fs-content-div h2 {}
+
+    .fs-content-div p {
+
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
-
-
-    .fs-content-div h2 {
-        font-size: 2.5vw;
-    }
-
-    .fs-content-div p {
-        font-size: 2.1vw;
     }
 
 }
@@ -57,7 +59,7 @@
 
     nav {
         font-size: 1.1rem;
-        padding: 0 2vw 4rem 2vw;
+        padding: 0 2vw 20vw 2vw;
     }
 
     ul li:nth-child(1) {
@@ -135,6 +137,7 @@
 
     .page1 {
         margin-top: 5vw;
+        max-width: 80vw;
     }
 
     .head-second-part {
@@ -159,29 +162,47 @@
     .page1-first-section {
         flex-wrap: wrap;
         flex-direction: row;
+
     }
 
     .dining,
     .nightlife,
     .order {
-        width: 49%
+        width: 47%;
+        height: 28vw;
+    }
+
+    .nightlife {
+        margin-top: 15px;
+    }
+
+    .fs-image {
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        -ms-border-radius: 10px 10px 0 0;
+        -o-border-radius: 10px 10px 0 0;
     }
 
     .fs-content-div {
-        bottom: 10vw;
-        width: calc(100% - 6px);
-        padding: 3px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
+        bottom: 1px;
+        width: calc(100% - 8px);
+        padding: 4px;
+        border-radius: 0 0 10px 10px;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        -ms-border-radius: 0 0 10px 10px;
+        -o-border-radius: 0 0 10px 10px;
     }
 
     .fs-content-div h2 {
-        font-size: 0.85rem;
+        font-size: 12.5px;
     }
 
     .fs-content-div p {
-        font-size: 0.75rem;
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

@@ -194,11 +194,9 @@
  }
 
 
-
-
- /* *the three divisions with phtoto */
+ /*  ! the page 1 */
  .page1 {
-     max-width: 90vw;
+     max-width: 75vw;
      margin: 0 auto;
      margin-top: 3vw;
      max-height: initial;
@@ -206,17 +204,33 @@
  }
 
 
+ /* *the three divisions with phtoto */
 
  .page1-first-section {
      width: 100%;
      display: flex;
      justify-content: space-between;
+     position: relative;
+
+
+ }
+
+ .dining,
+ .nightlife,
+ .order {
+     position: relative;
+     margin: 0;
+     padding: 0;
+     width: 32.333%;
+     height: 16vw;
+     box-sizing: border-box;
+
 
 
  }
 
  .fs-image {
-     height: 60%;
+     height: 90%;
      width: 100%;
      object-fit: cover;
      border-radius: 15px 15px 0 0;
@@ -229,9 +243,9 @@
  .fs-content-div {
      position: absolute;
      background-color: white;
-     width: calc(100% - 2rem);
-     bottom: 5.2vw;
-     padding: 1rem;
+     width: calc(100% - 20px);
+     bottom: 1px;
+     padding: 10px;
      border: 1px solid rgb(79, 79, 79, 0.1);
      border-radius: 0 0 15px 15px;
      -webkit-border-radius: 0 0 15px 15px;
@@ -240,17 +254,7 @@
      -o-border-radius: 0 0 15px 15px;
  }
 
- .dining,
- .nightlife,
- .order {
-     margin: 0;
-     padding: 0;
-     width: 32.3333%;
-     box-sizing: border-box;
-     position: relative;
 
-
- }
 
  .fs-content-div h2 {
      color: var(--heading-text-color);
@@ -270,7 +274,7 @@
 
  /* *collection section */
 
- .page1-second-section .heading{
+ /* .page1-second-section .heading{
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -296,3 +300,4 @@
     font-weight: 400;
     color: var(--para-text-color);
 }
+ */
