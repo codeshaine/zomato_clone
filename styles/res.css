@@ -25,9 +25,9 @@
 
     /* *the three divisions with phtoto */
 
-         .page1 {
-             margin-top: 5vw;
-         }
+    .page1 {
+        margin-top: 5vw;
+    }
 
     .fs-content-div {
         bottom: 4vw;
@@ -133,12 +133,13 @@
 
     /* * for the head second part */
 
-.page1{
-        margin-top:5vw;
+    .page1 {
+        margin-top: 5vw;
     }
-         .head-second-part{
-            margin-top: 12vw;
-         }
+
+    .head-second-part {
+        margin-top: 12vw;
+    }
 
     .head-second-part h1 {
         font-size: 4vh;
@@ -182,8 +183,5 @@
 
     .fs-content-div p {
         font-size: 0.75rem;
-    }
-    .head{
-        margin-bottom: ;
     }
 }
