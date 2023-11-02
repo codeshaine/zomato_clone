@@ -21,6 +21,8 @@
      background-size: cover;
      background-position: center;
      height: 60vh;
+     position: relative;
+  
  }
 
  /* *navbar */
@@ -28,7 +30,6 @@
  nav {
      font-family: var(--font-family-head);
      font-size: 1.2rem;
-     padding: 0 2vw 3vw 2vw;
      background-color: transparent;
      display: flex;
      align-items: center;
@@ -46,7 +47,6 @@
 
  .navbar-list {
      width: 100%;
-     padding: 1.5rem 0;
      padding-left: 0;
      display: flex;
      justify-content: center;
@@ -108,6 +108,9 @@
      align-items: center;
      justify-content: center;
      flex-direction: column;
+     width: 100%;
+     position: absolute;
+     top:7vw;
 
  }
 
@@ -204,7 +207,7 @@
  }
 
 
- /* *the three divisions with phtoto */
+ /* *first section */
 
  .page1-first-section {
      width: 100%;
@@ -269,12 +272,17 @@
      font-family: var(--font-family-para);
      font-size: 1.2vw;
      margin: 0;
+    white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
  }
 
 
- /* *collection section */
-
- /* .page1-second-section .heading{
+ /* *second section */
+.page1-second-section{
+    margin-top: 4vw;
+}
+ .page1-second-section .heading{
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -286,7 +294,7 @@
  }
 
  .page1-second-section h2{
-    font-size: 3.1vw;
+    font-size: 2.5vw;
     font-family: var(--font-family-head);
     font-weight: 500;
     margin: 0;
@@ -294,10 +302,21 @@
  }
 
 .page1-second-section .heading h6{
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     font-family: var(--font-family-para);
     margin: 0;
     font-weight: 400;
     color: var(--para-text-color);
 }
- */
+
+.heading a{
+    font-family: var(--font-family-para);
+    color: #e03546;
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.heading a i{
+    margin-left: 1vw;
+}
