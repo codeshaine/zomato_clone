@@ -124,7 +124,7 @@ z-index: 1;
 
 
 
-    /* * for the head second part */
+    /* * ? the head second part */
 
     .page1 {
         margin-top: 5vw;
@@ -196,4 +196,43 @@ z-index: 1;
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+
+    /* ?for the second part in page 1 */
+   .page1-second-section {
+       margin-top:1.5rem;
+   }
+.page1-second-section h2 {
+    font-size:1.6rem;
+}
+.page1-second-section .heading h6 {
+    font-size: 0.7rem;
+}
+    /* *the second part of page 1   collection */
+    
+        .collections {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            gap: 8px;
+        }
+    .collection-card{
+        max-width: 48%;
+
+    }
+.collection-card-image img {
+
+    height: 12rem;
+}
+
+.collection-card p{
+font-size: 12px;
+padding: 0 6px;
+}
+.collection-card h6{
+font-size: 9px;
+padding: 0 6px;
+}
+
+
 }

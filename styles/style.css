@@ -8,6 +8,11 @@
      --heading-text-color2: #1c1c1c
  }
 
+ ::selection{
+    background-color:#000;
+    color: #ffff;
+ }
+
 
 
  body {
@@ -22,8 +27,10 @@
      background-position: center;
      height: 60vh;
      position: relative;
-  
+     overflow: hidden;
+
  }
+ 
 
  /* *navbar */
 
@@ -214,23 +221,24 @@
      display: flex;
      justify-content: space-between;
      position: relative;
-
-
- }
+     
+}
 
  .dining,
  .nightlife,
  .order {
-     position: relative;
-     margin: 0;
-     padding: 0;
-     width: 32.333%;
-     height: 16vw;
-     box-sizing: border-box;
-
-
-
- }
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 32.333%;
+    height: 16vw;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in;
+    -webkit-transition: transform 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-in;
+    -ms-transition: transform 0.2s ease-in;
+    -o-transition: transform 0.2s ease-in;
+}
 
  .fs-image {
      height: 90%;
@@ -277,6 +285,15 @@
         text-overflow: ellipsis;
  }
 
+.card-hover:hover{
+    transform: scale(105%);
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -o-transform: scale(105%);
+}
+
+
 
  /* *second section */
 .page1-second-section{
@@ -319,4 +336,66 @@
 
 .heading a i{
     margin-left: 1vw;
+}
+
+
+/* *the .collection-card section */
+.collections{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+
+.collection-card{
+    max-width:24%;
+    position: relative;
+}
+.collection-card-image{
+    width: 100%;
+}
+
+.collection-card-image img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.collection-card-text{
+    position: absolute;
+    bottom:0px;
+    width:100%;
+
+}
+
+.collection-card p{
+    margin: 0;
+    font-size: 19px;
+    font-family: var(--font-family-head);
+    color:#ffff;
+    padding: 0 15px;
+    white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+
+}
+ .collection-card-text div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+ }
+
+
+.collection-card h6{
+    margin: 0;
+    font-family: var(--font-family-para);
+    color:#ffff;
+    font-size: 14px;
+    padding: 0 15px;
 }

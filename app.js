@@ -28,5 +28,5 @@ function navBar() {
       });
 
 }
-navBar();
+navBar();  //wrost way to do this.should have been refactoed..
 
