@@ -39,6 +39,18 @@
         width: calc(100% - 16px);
         padding: 8px;
     }
+
+
+/* page1 secod section in that collection */
+.page1-second-section .wrapper
+{
+    margin-top: 0.2rem;
+}
+.collection-card-image img {
+
+    height: 15rem;
+}
+
 }
 
 @media screen and (max-width:539px) {
@@ -60,7 +72,7 @@
     }
 
     .menu-bar {
-z-index: 1;
+        z-index: 1;
         position: absolute;
         top: 1rem;
         left: 2rem;
@@ -77,10 +89,13 @@ z-index: 1;
     }
 
     .tnavbar-list {
+        position: fixed;
+        top: 0;
+        left: 0;
         z-index: 2;
         padding: 7rem 1rem;
         display: block;
-        height: 100vh;
+        height:100vh;
         width: 100vw;
         background-color: var(--head-text-color);
         margin: 0;
@@ -206,33 +221,67 @@ z-index: 1;
     font-size:1.6rem;
 }
 .page1-second-section .heading h6 {
-    font-size: 0.7rem;
+    font-size:13px;
 }
     /* *the second part of page 1   collection */
-    
-        .collections {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-            gap: 8px;
-        }
-    .collection-card{
-        max-width: 48%;
 
-    }
+.collection-card h6 {
+    font-size: 9px;
+    padding: 0 6px;
+}
+.collection-card p {
+    font-size: 12px;
+    padding: 0 6px;
+}
 .collection-card-image img {
 
     height: 12rem;
 }
 
-.collection-card p{
-font-size: 12px;
-padding: 0 6px;
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 11px;
 }
-.collection-card h6{
-font-size: 9px;
-padding: 0 6px;
+
+
+.collection-card {
+    max-width: 48%;
+
 }
+
+.page1-second-section .wrapper {
+  display: block;
+
+}
+
+.page1-second-section .wrapper>div:nth-child(3) {
+    flex: 1 1 25%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top:10px ;
+
+}
+
+.page1-second-section .wrapper > div:nth-child(3){
+    margin-top:1rem;
+}
+.page1-second-section .wrapper>div:nth-child(3) span {
+  padding: 5px 0;
+}
+
+.page1-second-section a {
+    font-size: 13px;
+}
+.page1-second-section a i{
+    margin-left: 3px;
+}
+
+
+
+
 
 
 }
