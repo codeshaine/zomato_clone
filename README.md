@@ -1,6 +1,6 @@
 # zomato_clone
 
-##Description:
+## Description:
 
 <p>This is a clone of the one of the popular website called zomato. The main intention of making this project is to understand the working of vanilla css and javascript.Yeah there is no Framework,nor library and nor components are used. Everything is built form scratch.Because of that this project took very time and made me just stop working on this. But it seems i have completed more or likely to a point where this website is responsive.</p>
 
@@ -18,6 +18,7 @@ git clone https://github.com/codeshaine/zomato_clone.git
 
 <li>Then you can run this either with extension such as live server or just by clicking on the index.js</li>
 <br>
-ps:you can also visit this website <a href>zomato_clone</a>
 
 ## visuals
+
+ps:you can also visit this website <a href>zomato_clone</a>
