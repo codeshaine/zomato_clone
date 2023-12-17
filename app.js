@@ -29,8 +29,6 @@ function list() {
 }
 list();
 
-//exist
-
 function radioo() {
   const rhs = document.getElementById("rhs");
   const radio = document.getElementsByName("radioo");
@@ -43,3 +41,12 @@ function radioo() {
   });
 }
 radioo();
+
+const number = document.getElementById("number");
+const second_text = document.getElementById("unique-text-div");
+number.addEventListener("focus", () => {
+  second_text.style.border = "solid 2px rgb(0, 205, 140)";
+});
+number.addEventListener("blur", () => {
+  second_text.style.border = "solid 1px rgba(40, 33, 33, 0.1)";
+});
