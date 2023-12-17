@@ -3,49 +3,37 @@
     font-size: 0.7rem;
     margin-right: 20vw;
   }
-
   nav {
     font-size: 1rem;
     text-wrap: nowrap;
   }
-
   .navbar-list li {
     margin: 0 1.5vw;
   }
-
   .second-text-box {
     width: 30vw;
   }
-
   .head-second-part {
     top: 12vw;
   }
-
   .head-input-one {
     width: 30vw;
   }
-
   .head {
     height: 68vh;
   }
 
-  /* *the three divisions with phtoto */
-
   .page1 {
     margin-top: 5vw;
   }
-
   .fs-content-div {
     bottom: 1px;
     width: calc(100% - 16px);
     padding: 8px;
   }
-
-  /* page1 secod section in that collection */
   .page1-second-section .wrapper {
     margin-top: 0.2rem;
   }
-
   .collection-card-image img {
     height: 15rem;
   }
@@ -304,6 +292,74 @@
   .localities-card p {
     font-size: 0.8rem;
   }
-}
+  /* page2 */
+  .lhs {
+    display: none;
+  }
 
-/* page2 */
+  .rhs {
+    width: 20rem;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-para);
+    font-size: 1rem;
+  }
+
+  .rhs .content h1 {
+    font-size: 1.9rem;
+  }
+  .rhs .content p {
+    font-size: 0.9rem;
+  }
+
+  .rhs .content {
+    width: 20rem;
+    margin-top: 2rem;
+  }
+
+  .rhs .login-textbox .firstTextbox input {
+    width: 98%;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+
+  .rhs .login-textbox .secondTextbox input {
+    width: 75%;
+    height: 20px;
+    font-size: 0.9rem;
+  }
+  .rhs .login-textbox .secondTextbox select {
+    height: 50px;
+    width: 20%;
+    font-size: 0.7rem;
+  }
+
+  .rhs .login-textbox .secondTextbox div {
+    width: 99%;
+    height: 50px;
+  }
+
+  .red-button {
+    width: 70px;
+    height: 50px;
+  }
+
+  .red-button a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .red-button a span {
+    display: none;
+  }
+
+  .red-button a::after {
+    content: "Share";
+  }
+
+  .rhs .get-it-image img {
+    width: 6rem;
+  }
+}

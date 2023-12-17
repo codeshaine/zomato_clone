@@ -649,9 +649,6 @@ ul li:nth-child(1) i {
   font-weight: 400;
   outline: none;
 }
-.rhs .get-it-image img {
-  width: 5rem;
-}
 
 .red-button {
   display: flex;
@@ -687,3 +684,15 @@ ul li:nth-child(1) i {
 .rhs.exist .login-textbox .firstTextbox {
   display: none;
 }
+
+.get-it-image p {
+  font-size: 0.9rem;
+}
+.rhs .get-it-image img {
+  width: 9rem;
+}
+.rhs .get-it-image img:nth-child(2) {
+  margin-left: 1rem;
+}
+
+/*!! max-width: 75vw; just for note */

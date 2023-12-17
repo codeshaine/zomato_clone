@@ -1,482 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zomato-clone</title>
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&family=Poppins&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/18387468cf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/18387468cf.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/res.css">
-    <link rel="stylesheet" href="styles/animation.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/res.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+  </head>
+  <body>
     <div class="head">
-        <header>
-            <nav class="navbar">
-                <h1 class="menu-title">zomato</h1>
-                <a href="" class="menu-bar menu-bar-display" id="menu"><i class="fa-solid fa-bars fa-lg"
-                        style="color: #ffffff;"></i> </a>
-                <a href="" class="menu-close menu-close-display" id="close"><i class="fa-solid fa-x "></i></a>
-                <ul class="navbar-list">
-                    <li><a href=""><i class="fa-solid fa-mobile-screen"></i>Get the app</a></li>
-                    <li><a href="#">Investor Relation</a></li>
-                    <li><a href="#">Add restaurnat</a></li>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sign up</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="head-second-part">
-            <img class="head-logo" src="./images/logo.avif" alt="">
-            <h1>Discover the best food & drinks in Bengaluru</h1>
-            <div class="text-boxes">
-                <div class="first-text-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="20" height="20" viewBox="0 0 20 20"
-                        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                        class="sc-rbbb40-0 iRDDBk svg-location">
-                        <title>location-fill</title>
-                        <path
-                            d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z">
-                        </path>
-                    </svg>
+      <header>
+        <nav class="navbar">
+          <h1 class="menu-title">zomato</h1>
+          <a href="" class="menu-bar menu-bar-display" id="menu"
+            ><i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i>
+          </a>
+          <a href="" class="menu-close menu-close-display" id="close"
+            ><i class="fa-solid fa-x"></i
+          ></a>
+          <ul class="navbar-list">
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-mobile-screen"></i>Get the app</a
+              >
+            </li>
+            <li><a href="#">Investor Relation</a></li>
+            <li><a href="#">Add restaurnat</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="head-second-part">
+        <img class="head-logo" src="./images/logo.avif" alt="" />
+        <h1>Discover the best food & drinks in Bengaluru</h1>
+        <div class="text-boxes">
+          <div class="first-text-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#FF7E8B"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iRDDBk svg-location"
+            >
+              <title>location-fill</title>
+              <path
+                d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"
+              ></path>
+            </svg>
 
-                    <input type="text" name="" id="" placeholder="Benagaluru" class="head-input-one">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#4F4F4F" width="12" height="12" viewBox="0 0 20 20"
-                        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                        class="sc-rbbb40-0 ezrcri svg-arrow">
-                        <path d="M20 5.42l-10 10-10-10h20z"></path>
-                    </svg>
-
-                </div>
-                <div class="second-text-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#828282" width="18" height="18" viewBox="0 0 20 20"
-                        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                        class="sc-rbbb40-0 iwHbVQ svg-search">
-                        <title>Search</title>
-                        <path
-                            d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z">
-                        </path>
-                    </svg>
-                    <input type="text" name="" id="" class="head-input-two"
-                        placeholder="Search for restaurnat, cuisine or a dish">
-                </div>
-            </div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Benagaluru"
+              class="head-input-one"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#4F4F4F"
+              width="12"
+              height="12"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 ezrcri svg-arrow"
+            >
+              <path d="M20 5.42l-10 10-10-10h20z"></path>
+            </svg>
+          </div>
+          <div class="second-text-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#828282"
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ svg-search"
+            >
+              <title>Search</title>
+              <path
+                d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z"
+              ></path>
+            </svg>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="head-input-two"
+              placeholder="Search for restaurnat, cuisine or a dish"
+            />
+          </div>
         </div>
+      </div>
     </div>
     <div class="page1">
-        <div class="page1-first-section">
-            <div class="order card-hover">
-                <img class="fs-image" src="./images/order_online.avif" alt="">
-                <div class="fs-content-div">
-                    <h2>Order Online</h2>
-                    <p>Stay home and order to your doorstep</p>
-                </div>
-
-            </div>
-            <div class="dining card-hover">
-                <img class="fs-image" src="./images/dining.avif" alt="">
-                <div class="fs-content-div">
-                    <h2>Dining</h2>
-                    <p>View the city's favourite dining venues</p>
-                </div>
-            </div>
-            <div class="nightlife card-hover">
-                <img class="fs-image" src="./images/nightlife.avif" alt="">
-                <div class="fs-content-div">
-                    <h2>Nightlife and Clubs</h2>
-                    <p>Explore the city's top nightlife outlets</p>
-                </div>
-            </div>
+      <div class="page1-first-section">
+        <div class="order card-hover">
+          <img class="fs-image" src="./images/order_online.avif" alt="" />
+          <div class="fs-content-div">
+            <h2>Order Online</h2>
+            <p>Stay home and order to your doorstep</p>
+          </div>
         </div>
-        <div class="page1-second-section">
-            <h2>Collections</h2>
-            <div class="wrapper">
-                <div class="heading">
-                    <h6>Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends
-                    </h6>
-                </div>
-                <div class="collections">
-                    <div class="collection-card">
-                        <div class="collection-card-image">
-                            <img src="./images/ballon.avif" alt="">
-                        </div>
-                        <div class="collection-card-text">
-                            <p>Newly Opened Restaurants</p>
-                            <div>
-                                <h6>12 places</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" width="10" height="10"
-                                    viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                    class="sc-rbbb40-0 gvsUip">
-                                    <title>right-triangle</title>
-                                    <path d="M5 0.42l10 10-10 10v-20z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-
-                    </div>
-                    <div class="collection-card">
-                        <div class="collection-card-image">
-                            <img src="./images/chair.avif" alt="">
-                        </div>
-                        <div class="collection-card-text">
-                            <p>Serene Rooftop Places</p>
-                            <div>
-                                <h6>27 places</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" width="10" height="10"
-                                    viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                    class="sc-rbbb40-0 gvsUip">
-                                    <title>right-triangle</title>
-                                    <path d="M5 0.42l10 10-10 10v-20z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-                    </div>
-
-                    <div class="collection-card ">
-
-                        <div class="collection-card-image">
-                            <img src="./images/lights.avif" alt="">
-                        </div>
-                        <div class="collection-card-text">
-                            <p>Trending Restaurants</p>
-                            <div>
-                                <h6>10 places</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" width="10" height="10"
-                                    viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                    class="sc-rbbb40-0 gvsUip">
-                                    <title>right-triangle</title>
-                                    <path d="M5 0.42l10 10-10 10v-20z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-
-                    </div>
-                    <div class="collection-card">
-                        <div class="collection-card-image">
-                            <img src="./images/chair2.avif" alt="">
-                        </div>
-                        <div class="collection-card-text">
-                            <p>Must-visit Legendary Places</p>
-                            <div>
-                                <h6>11 places</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" width="10" height="10"
-                                    viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                    class="sc-rbbb40-0 gvsUip">
-                                    <title>right-triangle</title>
-                                    <path d="M5 0.42l10 10-10 10v-20z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="overlay"></div>
-
-                    </div>
-
-
-
-                </div>
+        <div class="dining card-hover">
+          <img class="fs-image" src="./images/dining.avif" alt="" />
+          <div class="fs-content-div">
+            <h2>Dining</h2>
+            <p>View the city's favourite dining venues</p>
+          </div>
+        </div>
+        <div class="nightlife card-hover">
+          <img class="fs-image" src="./images/nightlife.avif" alt="" />
+          <div class="fs-content-div">
+            <h2>Nightlife and Clubs</h2>
+            <p>Explore the city's top nightlife outlets</p>
+          </div>
+        </div>
+      </div>
+      <div class="page1-second-section">
+        <h2>Collections</h2>
+        <div class="wrapper">
+          <div class="heading">
+            <h6>
+              Explore curated lists of top restaurants, cafes, pubs, and bars in
+              Bengaluru, based on trends
+            </h6>
+          </div>
+          <div class="collections">
+            <div class="collection-card">
+              <div class="collection-card-image">
+                <img src="./images/ballon.avif" alt="" />
+              </div>
+              <div class="collection-card-text">
+                <p>Newly Opened Restaurants</p>
                 <div>
-                    <a href="#"><span>All Collections in Bengaluru
-                            <i><svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="11" height="11"
-                                    viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                    class="sc-rbbb40-0 ezrcri">
-                                    <title>right-triangle</title>
-                                    <path d="M5 0.42l10 10-10 10v-20z"></path>
-                                </svg></i>
-                        </span></a>
+                  <h6>12 places</h6>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffff"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 gvsUip"
+                  >
+                    <title>right-triangle</title>
+                    <path d="M5 0.42l10 10-10 10v-20z"></path>
+                  </svg>
                 </div>
+              </div>
+              <div class="overlay"></div>
             </div>
-        </div>
-        <div id="page1-section-3" class="page1-third-section">
-            <h1 class="heading">Popular localities in and around <strong>Bengaluru</strong></h1>
-            <div class="wrapper">
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Indiranagar</h3>
-                            <p>528 places</p>
-                        </div>
-                        <i class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15" color="#1C1C1C"><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15"
-                                viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
-                                class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
+            <div class="collection-card">
+              <div class="collection-card-image">
+                <img src="./images/chair.avif" alt="" />
+              </div>
+              <div class="collection-card-text">
+                <p>Serene Rooftop Places</p>
+                <div>
+                  <h6>27 places</h6>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffff"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 gvsUip"
+                  >
+                    <title>right-triangle</title>
+                    <path d="M5 0.42l10 10-10 10v-20z"></path>
+                  </svg>
                 </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
 
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Marathahalli</h3>
-                            <p>902 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
+            <div class="collection-card">
+              <div class="collection-card-image">
+                <img src="./images/lights.avif" alt="" />
+              </div>
+              <div class="collection-card-text">
+                <p>Trending Restaurants</p>
+                <div>
+                  <h6>10 places</h6>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffff"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 gvsUip"
+                  >
+                    <title>right-triangle</title>
+                    <path d="M5 0.42l10 10-10 10v-20z"></path>
+                  </svg>
                 </div>
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Whitefield</h3>
-                            <p>974 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Koramangala 5th Block</h3>
-                            <p>267 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>HSR</h3>
-                            <p>829 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Jayanagar</h3>
-                            <p>539 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>JP Nagar</h3>
-                            <p>644 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Sarjapur Road</h3>
-                            <p>703 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card localities-invisible">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Lavelle Road</h3>
-                            <p>82 places</p>
-                        </div>
-                        <i  class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card localities-invisible">
-                    <div class="wrapper">
-                        <div>
-                            <h3>Malleshwaram</h3>
-                            <p>328 places</p>
-                        </div>
-                        <i class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card localities-invisible">
-                    <div class="wrapper">
-                        <div>
-                            <h3>BTM</h3>
-                            <p>1040 places</p>
-                        </div>
-                        <i class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
-                <div class="localities-card-special">
-                    <div class="wrapper">
-                        <div>
-                            <h3 id="localities-special">see more</h3>
-                        </div>
-                        <i id="localities-card-button" class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP" size="15"
-                            color="#1C1C1C"><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15"
-                                height="15" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-"
-                                role="img" class="sc-rbbb40-0 jKmKoK">
-                                <title>chevron-right</title>
-                                <path
-                                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z">
-                                </path>
-                            </svg></i>
-                    </div>
-                </div>
+              </div>
+              <div class="overlay"></div>
             </div>
+            <div class="collection-card">
+              <div class="collection-card-image">
+                <img src="./images/chair2.avif" alt="" />
+              </div>
+              <div class="collection-card-text">
+                <p>Must-visit Legendary Places</p>
+                <div>
+                  <h6>11 places</h6>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffff"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 gvsUip"
+                  >
+                    <title>right-triangle</title>
+                    <path d="M5 0.42l10 10-10 10v-20z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div>
+            <a href="#"
+              ><span
+                >All Collections in Bengaluru
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#FF7E8B"
+                    width="11"
+                    height="11"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 ezrcri"
+                  >
+                    <title>right-triangle</title>
+                    <path d="M5 0.42l10 10-10 10v-20z"></path></svg
+                ></i> </span
+            ></a>
+          </div>
         </div>
+      </div>
+      <div id="page1-section-3" class="page1-third-section">
+        <h1 class="heading">
+          Popular localities in and around <strong>Bengaluru</strong>
+        </h1>
+        <div class="wrapper">
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>Indiranagar</h3>
+                <p>528 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>Marathahalli</h3>
+                <p>902 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>Whitefield</h3>
+                <p>974 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>Koramangala 5th Block</h3>
+                <p>267 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>HSR</h3>
+                <p>829 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>Jayanagar</h3>
+                <p>539 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>JP Nagar</h3>
+                <p>644 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card">
+            <div class="wrapper">
+              <div>
+                <h3>Sarjapur Road</h3>
+                <p>703 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card localities-invisible">
+            <div class="wrapper">
+              <div>
+                <h3>Lavelle Road</h3>
+                <p>82 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card localities-invisible">
+            <div class="wrapper">
+              <div>
+                <h3>Malleshwaram</h3>
+                <p>328 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card localities-invisible">
+            <div class="wrapper">
+              <div>
+                <h3>BTM</h3>
+                <p>1040 places</p>
+              </div>
+              <i
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+          <div class="localities-card-special">
+            <div class="wrapper">
+              <div>
+                <h3 id="localities-special">see more</h3>
+              </div>
+              <i
+                id="localities-card-button"
+                class="sc-rbbb40-1 iFnyeo sc-RbTVP hoEYKP"
+                size="15"
+                color="#1C1C1C"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 jKmKoK"
+                >
+                  <title>chevron-right</title>
+                  <path
+                    d="M6.98 15.94c-0.3-0.28-0.3-0.76 0-1.060l4.46-4.46-4.46-4.48c-0.3-0.28-0.3-0.76 0-1.060s0.76-0.28 1.060 0l5 5c0.28 0.3 0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0z"
+                  ></path></svg
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="page2">
       <div class="wrapper">
-<div class="lhs">
-    <div>
-<img  src="./images/mobile.avif" alt="">
-</div>
-</div>
-<div class="rhs" id="rhs">
-    <div class="content">
-        <div>
-        <h1>Get the Zomato app</h1>
-        <p>We will send you a link, open it on your phone to download the app</p>
+        <div class="lhs">
+          <div>
+            <img src="./images/mobile.avif" alt="" />
+          </div>
         </div>
-        <div class="login">
-            <input type="radio" name="radioo" id="email" checked>
-            <label for="email">Email</label>
-            <input type="radio" name="radioo" id="phone">
-            <label for="phone">Phone</label>
-        </div>
-        <div class="login-textbox">
+        <div class="rhs" id="rhs">
+          <div class="content">
             <div>
-            <div class="firstTextbox">
-              <input type="text" placeholder="   Email">
+              <h1>Get the Zomato app</h1>
+              <p>
+                We will send you a link, open it on your phone to download the
+                app
+              </p>
             </div>
-            <div class="secondTextbox">
-                <div id="unique-text-div">
-               <select name="" id="">
-                <option value="">+91</option>
-                 <option value="">+32</option>
-                  <option value="">+43</option>
-                   <option value="">+54</option>
-                    <option value="">+89</option>
-                    <option value="">+67</option>
-                    <option value="">+90</option>
-                    <option value="">+45</option>
-                    <option value="">+123</option>
-                    <option value="">+78    </option>
-               </select>
-                <input type="text" id="number" placeholder="   type here...">
+            <div class="login">
+              <input type="radio" name="radioo" id="email" checked />
+              <label for="email">Email</label>
+              <input type="radio" name="radioo" id="phone" />
+              <label for="phone">Phone</label>
+            </div>
+            <div class="login-textbox">
+              <div>
+                <div class="firstTextbox">
+                  <input type="text" placeholder="   Email" />
                 </div>
-            </div>
-            </div>
-            <div>
+                <div class="secondTextbox">
+                  <div id="unique-text-div">
+                    <select name="" id="">
+                      <option value="">+91</option>
+                      <option value="">+32</option>
+                      <option value="">+43</option>
+                      <option value="">+54</option>
+                      <option value="">+89</option>
+                      <option value="">+67</option>
+                      <option value="">+90</option>
+                      <option value="">+45</option>
+                      <option value="">+123</option>
+                      <option value="">+78</option>
+                    </select>
+                    <input
+                      type="text"
+                      id="number"
+                      placeholder="   type here..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
                 <div class="red-button">
-                    <a href="#"">Share app Link</a>
+                  <a href="#"><span>Share app Link</span></a>
                 </div>
-               
+              </div>
             </div>
-        </div>
-        <div class="get-it-image">
-            <p>Download app from</p>
-            <div>
-                <img src="./images/playstore.webp" alt="">
-                <img src="./images/appstore.webp" alt="">
+            <div class="get-it-image">
+              <p>Download app from</p>
+              <div>
+                <img src="./images/playstore.webp" alt="" />
+                <img src="./images/appstore.webp" alt="" />
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-</div>
-    </div>
+      </div>
     </div>
 
-
-
-
-
-
-
-    <h1>dd</h1><h1>dd</h1>
+    <h1>dd</h1>
+    <h1>dd</h1>
     <h1>dd</h1>
     <h1>dd</h1>
     <h1>dd</h1>
@@ -484,6 +680,5 @@
 
     <!-- script -->
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
