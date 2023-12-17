@@ -511,3 +511,95 @@ ul li:nth-child(1) i {
 }
 
 /* page2 */
+
+.page2 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #fffbf7;
+  height: 30rem;
+}
+
+.page2 .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.lhs {
+  height: 26rem;
+  display: flex;
+  align-items: center;
+}
+
+.lhs div {
+  display: flex;
+  height: 17rem;
+}
+.lhs img {
+  height: 100%;
+  width: 100%;
+}
+
+.rhs {
+  width: 35rem;
+  height: 26rem;
+  display: flex;
+  justify-content: flex-end;
+  font-family: var(--font-family-para);
+  font-size: 1.1rem;
+}
+
+.rhs .content h1 {
+  font-family: var(--font-family-head);
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rhs .content p {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+  margin-bottom: 1.4rem;
+  line-height: 35px;
+}
+
+.rhs .content {
+  width: 31rem;
+  margin-top: 2rem;
+}
+
+.rhs .login-textbox {
+  display: flex;
+}
+
+.rhs .login-textbox > div:nth-child(1) {
+  width: 65%;
+}
+
+.rhs .login-textbox > div:nth-child(2) {
+  width: 35%;
+}
+
+.rhs .get-it-image img {
+  width: 5rem;
+}
+
+.red-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  background-color: #ef4f5f;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.red-button a {
+  color: #ffff;
+  text-decoration: none;
+}
