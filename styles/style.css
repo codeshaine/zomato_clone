@@ -694,7 +694,7 @@ ul li:nth-child(1) i {
   color: #4f4f4f;
 }
 .explore-near {
-  max-width: 75vw;
+  width: 75vw;
 }
 
 .explore-near h1 {
@@ -702,7 +702,7 @@ ul li:nth-child(1) i {
   margin-top: 3.5rem;
   font-family: var(--font-family-head);
   color: var(--heading-text-color2);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 550;
 }
 
@@ -729,7 +729,6 @@ ul li:nth-child(1) i {
 }
 
 .explore-near .exp-card section:nth-child(1) {
-  background-color: rgb(239, 195, 195);
   padding: 1.2rem 1.9rem;
   display: flex;
   justify-content: space-between;
@@ -737,7 +736,6 @@ ul li:nth-child(1) i {
 }
 
 .explore-near .exp-card section:nth-child(2) {
-  background-color: rgb(178, 178, 214);
   padding: 1.2rem 1.9rem;
 }
 .exp-card-ul-list {
@@ -746,23 +744,43 @@ ul li:nth-child(1) i {
 }
 .exp-card-grid-list {
   display: grid;
-  /* grid-template-rows: repeat(5, 1fr); */
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 12px;
 }
 
 .exp-fs-span {
-  /* margin: 4px 4px 4px 0; */
+  margin: 4px 10px 4px 0;
   margin-right: 10px;
-  /* margin: 4px 1px 4px 0; */
 }
 
-/* .explore-near.exp #exp-but {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+.section2-visible {
+  display: none;
 }
 
-.explore-near.exp .exp-card section:nth-child(2) {
-  display: block;
-} */
+/* animation for the buttons */
+
+.exp-but {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+
+.exp-but-click {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}

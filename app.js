@@ -42,11 +42,25 @@ function radioo() {
 }
 radioo();
 
-const number = document.getElementById("number");
-const second_text = document.getElementById("unique-text-div");
-number.addEventListener("focus", () => {
-  second_text.style.border = "solid 2px rgb(0, 205, 140)";
-});
-number.addEventListener("blur", () => {
-  second_text.style.border = "solid 1px rgba(40, 33, 33, 0.1)";
-});
+function borderColor() {
+  const number = document.getElementById("number");
+  const second_text = document.getElementById("unique-text-div");
+  number.addEventListener("focus", () => {
+    second_text.style.border = "solid 2px rgb(0, 205, 140)";
+  });
+  number.addEventListener("blur", () => {
+    second_text.style.border = "solid 1px rgba(40, 33, 33, 0.1)";
+  });
+}
+borderColor();
+
+function displayOrNot() {
+  const exp_near = document.getElementById("exp-near");
+  exp_near.addEventListener("click", (e) => {
+    const closestSpan = e.target.closest("span");
+    const section = e.target.closest("section").nextElementSibling;
+    closestSpan.classList.toggle("exp-but-click");
+    section.classList.toggle("section2-visible");
+  });
+}
+displayOrNot();

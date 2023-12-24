@@ -362,4 +362,8 @@
   .rhs .get-it-image img {
     width: 6rem;
   }
+  /* page3 */
+  .exp-card-grid-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
