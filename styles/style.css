@@ -495,15 +495,6 @@ ul li:nth-child(1) i {
   margin: 0 0 5px;
 }
 
-/* .localities-card-special h3 {
-     margin: 0;
-     font-size: 1.3rem;
-     font-family: var(--font-family-head);
-     font-weight: 500;
-     letter-spacing: 0.5px;
-
- } */
-
 .localities-card p {
   margin: 0;
   font-size: 1.1rem;
@@ -695,4 +686,83 @@ ul li:nth-child(1) i {
   margin-left: 1rem;
 }
 
-/*!! max-width: 75vw; just for note */
+/*!! explore near  */
+.page3 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-para);
+  color: #4f4f4f;
+}
+.explore-near {
+  max-width: 75vw;
+}
+
+.explore-near h1 {
+  margin: 0;
+  margin-top: 3.5rem;
+  font-family: var(--font-family-head);
+  color: var(--heading-text-color2);
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.explore-near section {
+  margin: 0;
+  width: inherit;
+}
+
+.explore-near .exp-card {
+  margin: 2rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 1rem;
+}
+
+.explore-near .exp-card section h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+
+.explore-near .exp-card section:nth-child(1) {
+  background-color: rgb(239, 195, 195);
+  padding: 1.2rem 1.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore-near .exp-card section:nth-child(2) {
+  background-color: rgb(178, 178, 214);
+  padding: 1.2rem 1.9rem;
+}
+.exp-card-ul-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.exp-card-grid-list {
+  display: grid;
+  /* grid-template-rows: repeat(5, 1fr); */
+}
+
+.exp-fs-span {
+  /* margin: 4px 4px 4px 0; */
+  margin-right: 10px;
+  /* margin: 4px 1px 4px 0; */
+}
+
+/* .explore-near.exp #exp-but {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.explore-near.exp .exp-card section:nth-child(2) {
+  display: block;
+} */
