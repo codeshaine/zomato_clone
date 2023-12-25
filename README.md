@@ -26,10 +26,10 @@ git clone https://github.com/codeshaine/zomato_clone.git
 <img width="100%" src="./images/visuals/Screenshot 2023-12-25 173458.png">
 <img width="100%" src="./images/visuals/Screenshot 2023-12-25 173530.png">
 <img width="100%" src="./images/visuals/Screenshot 2023-12-25 173549.png">
-<img width="50%%" src="./images/visuals/Screenshot 2023-12-25 173621.png">
-<img width="50%" src="./images/visuals/Screenshot 2023-12-25 173629.png">
-<img width="50%" src="./images/visuals/Screenshot 2023-12-25 173651.png">
-<img width="50%" src="./images/visuals/Screenshot 2023-12-25 173635.png">
+<img width="30%%" src="./images/visuals/Screenshot 2023-12-25 173621.png"><br>
+<img width="30%" src="./images/visuals/Screenshot 2023-12-25 173629.png"><br>
+<img width="30%" src="./images/visuals/Screenshot 2023-12-25 173651.png"><br>
+<img width="30%" src="./images/visuals/Screenshot 2023-12-25 173635.png">
 
 > </div>
 
