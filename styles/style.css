@@ -20,7 +20,7 @@ body {
 /*! just for cheking use unversal */
 
 .head {
-  background-image: url("/images/header.avif");
+  background-image: url("../images/header.avif");
   background-size: cover;
   background-position: center;
   height: 60vh;
