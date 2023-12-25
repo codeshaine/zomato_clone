@@ -364,6 +364,49 @@
   }
   /* page3 */
   .exp-card-grid-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .explore-near .exp-card section h3 {
+    font-size: 1.1rem;
+  }
+
+  .explore-near h1 {
+    font-size: 1.4rem;
+  }
+
+  /* footer */
+  footer .wrapper .wrapper-body {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wrapper-body div:nth-child(5) {
+    display: none;
+  }
+  footer .wrapper-head {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 2rem;
+  }
+  .wrapper-head .but {
+    font-size: 1rem;
+  }
+  .but .but-country,
+  .but-language {
+    padding: 10px 20px;
+  }
+  .wrapper-body-col h3 {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+  .wrapper-body-col nav {
+    font-size: 0.8rem;
+  }
+  .wrapper-body-col {
+    margin-bottom: 20px;
+  }
+  .wrapper-footer p {
+    margin: 0;
+    font-size: 10px;
   }
 }
