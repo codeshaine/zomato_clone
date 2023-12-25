@@ -21,4 +21,20 @@ git clone https://github.com/codeshaine/zomato_clone.git
 
 ## visuals
 
-<p>ps:you can also visit this website : <a href>zomato_clone</a></p>
+<div align="center">
+<img width="100%" src="./images/visuals/Screenshot 2023-12-25 173348.png">
+<img width="100%" src="./images/visuals/Screenshot 2023-12-25 173458.png">
+<img width="100%" src="./images/visuals/Screenshot 2023-12-25 173530.png">
+<img width="100%" src="./images/visuals/Screenshot 2023-12-25 173549.png">
+<img width="50%%" src="./images/visuals/Screenshot 2023-12-25 173621.png">
+<img width="50%" src="./images/visuals/Screenshot 2023-12-25 173629.png">
+<img width="50%" src="./images/visuals/Screenshot 2023-12-25 173651.png">
+<img width="50%" src="./images/visuals/Screenshot 2023-12-25 173635.png">
+
+> </div>
+
+<div align="center"><a   href=""><font size="5">Go Up</font></a>
+<br>
+<br>
+<p>ps:you can also visit this website : <a href="#zomato_clone">zomato_clone</a></p>
+</div>
