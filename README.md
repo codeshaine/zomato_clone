@@ -36,5 +36,5 @@ git clone https://github.com/codeshaine/zomato_clone.git
 <div align="center"><a href="#zomato_clone" ><font size="4">Go Up</font></a>
 <br>
 <br>
-<p>ps:you can also visit this website : <a href="#zomato_clone">zomato_clone</a></p>
+<p>ps:you can also visit this website : <a href="https://codeshaine.github.io/zomato_clone/">zomato_clone</a></p>
 </div>
